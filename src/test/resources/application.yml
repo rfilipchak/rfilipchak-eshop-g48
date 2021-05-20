@@ -1,0 +1,37 @@
+#spring:
+#  profiles:
+#    active: test
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/test-spring-eshop-g48
+#    username: "postgres"
+#    password: "qwery4321"
+#    hikari:
+#      connectionTimeout: 20000
+#      maximumPoolSize: 2
+#      driver-class-name: "org.postgresql.Driver"
+
+debug: true
+server:
+  port: 8092
+spring:
+  profiles:
+    active: test
+  freemarker:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+      path: /h2
+endpoints:
+  auditevents:
+    enabled: false
+
+
+

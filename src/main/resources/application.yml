@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: prod
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring-eshop-g48
+    username: "postgres"
+    password: "qwery4321"
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 100
+      driver-class-name: "org.postgresql.Driver"
+  flyway:
+    baseline-on-migrate: true
+
+
+
